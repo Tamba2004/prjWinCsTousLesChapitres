@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31C30932-D788-4C40-AB60-A4FF4CE60B6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>prjWinCsTousLesChapitres</RootNamespace>
+    <AssemblyName>prjWinCsTousLesChapitres</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarnet.Designer.cs">
+      <DependentUpon>FrmCarnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConditions.Designer.cs">
+      <DependentUpon>FrmConditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMcDoShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMcDoShift.Designer.cs">
+      <DependentUpon>FrmMcDoShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepetitions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepetitions.Designer.cs">
+      <DependentUpon>FrmRepetitions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStrucTableaux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStrucTableaux.Designer.cs">
+      <DependentUpon>FrmStrucTableaux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStructCollectionsFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStructCollectionsFiles.Designer.cs">
+      <DependentUpon>FrmStructCollectionsFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableau.Designer.cs">
+      <DependentUpon>FrmTableau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVideo.Designer.cs">
+      <DependentUpon>FrmVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCarnet.resx">
+      <DependentUpon>FrmCarnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConditions.resx">
+      <DependentUpon>FrmConditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMcDoShift.resx">
+      <DependentUpon>FrmMcDoShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepetitions.resx">
+      <DependentUpon>FrmRepetitions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStrucTableaux.resx">
+      <DependentUpon>FrmStrucTableaux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStructCollectionsFiles.resx">
+      <DependentUpon>FrmStructCollectionsFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableau.resx">
+      <DependentUpon>FrmTableau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVideo.resx">
+      <DependentUpon>FrmVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
